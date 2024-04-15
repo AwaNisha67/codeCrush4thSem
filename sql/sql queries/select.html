@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL SELECT Statement</h1>
+    <hr>
+     <p>The SELECT statement is the most commonly used command in Structured Query Language. It is used to access the records from one or more database tables and views. It also retrieves the selected data that follow the conditions we want.</p>
+     <br>
+     <p>By using this command, we can also access the particular record from the particular column of the table. The table which stores the record returned by the SELECT statement is called a result-set table.</p>
+    <h2><b><strong>Syntax:-</strong></b></h2>
+    <blockquote><p><span>SELECT</span> col1, col2,...,colN <span>FROM</span> table_name;<br></p></blockquote>
+     <p>To access all rows from all fields of the table then we use SELECT statement with * asterisk sign:-</p>
+    <blockquote><p><span>SELECT</span>*<span>FROM</span> table_name;<br></p></blockquote>
+
+    <h3><b><strong>SQL SELECT Statement example:-</strong></b></h3>
+    <p>Creating table name student from which we will select the rows.</p>
+    <pre><p><span>CREATE TABLE</span> student(rollNo INT PRIMARY KEY,
+studName VARCHAR(20),
+lastName VARCHAR(20),
+age INT CHECK(age >= 0 AND age &lt;= 20));</p>
+    </pre>
+     
+    <p>Inserting some Values in the above created table:-</p>
+    <pre><p><span>INSERT INTO</span> student
+        (4265,"irfaan","khan",20),
+        (4266,"adhiraj","kanwar",19),
+        (4267,"awanisha","pal",19);
+    </p></pre>
+    
+    <p>Selecting the values from the student table:-</p>
+    <pre><p><span>SELECT</span>* <span>FROM</span> student;</p>
+    </pre>
+
+
+</body>
+</html>

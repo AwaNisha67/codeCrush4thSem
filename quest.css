@@ -1,0 +1,27 @@
+#quest{
+    display: block;
+
+}
+pre{
+            
+    margin: 100px;
+    margin-left: 10px;
+    margin-top: 9px;
+   background-color: rgb(240,240,240); 
+   width: 800px;
+   font-size: 18px;
+}
+code{        
+        margin: 130px;
+        margin-top: 9px;
+       background-color: rgb(240,240,240); 
+       width: 530px;
+       font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* a:hover{
+    font-size: large;
+} */

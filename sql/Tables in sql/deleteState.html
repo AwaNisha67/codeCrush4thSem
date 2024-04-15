@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL DELETE Statement</h1>
+    <hr>
+     <p>SQL DELETE is a basic SQL operation used to delete data in a database. SQL DELETE is an important part of database management DELETE can be used to selectively remove records from a database table based on certain conditions.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p><span>DELETE FROM</span> table_name
+WHERE some_condition ;
+    </p></blockquote>
+    <h3><b><strong>Deleting Single Record</strong></b></h3>
+    <h4><b><strong>Query:-</strong></b></h4>
+    <pre><p><span>DELETE FROM</span> student
+WHERE studName = 'ABC';
+    </p></pre>
+    <h3><b><strong>Output:-</strong></b></h3>
+    <!-- output of Create database -->
+    <div class="output">
+        <!-- <h1>--!!image!!--</h1> -->
+        <img src="/sql/Tables in sql/deleteState.png" alt="">
+    </div>
+
+    <h3><b><strong>Deleting Multiple Records</strong></b></h3>
+    <h4><b><strong>Query:-</strong></b></h4>
+    <pre><p><span>DELETE FROM </span>student
+WHERE studName IS NULL;
+    </p></pre>
+    
+</body>
+</html>

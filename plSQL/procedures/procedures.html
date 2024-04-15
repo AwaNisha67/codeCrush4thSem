@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Procedures in PL/SQL:-</h1>
+    <hr>
+     <p>PL/SQL is a block-structured language that enables developers to combine the power of SQL with procedural statements.<br>
+        A stored procedure in PL/SQL is nothing but a series of declarative SQL statements which can be stored in the database catalogue. A procedure can be thought of as a function or a method. They can be invoked through triggers, other procedures, or applications on Java, PHP etc.<br>
+        All the statements of a block are passed to Oracle engine all at once which increases processing speed and decreases the traffic. <br>
+    </p>
+     <h3><b><strong>Advantages:</strong></b></h3>
+     <ul>
+     <li>They result in performance improvement of the application. If a procedure is being called frequently in an application in a single connection, then the compiled version of the procedure is delivered.</li>
+<li>They reduce the traffic between the database and the application, since the lengthy statements are already fed into the database and need not be sent again and again via the application</li>
+    </ul>
+    <h3><b><strong>Disadvantages:</strong></b></h3>
+    <ul>
+    <li>Stored procedures can cause a lot of memory usage. The database administrator should decide an upper bound as to how many stored procedures are feasible for a particular application.</li>
+<li>MySQL does not provide the functionality of debugging the stored procedures.</li>
+   </ul>
+   <h2><b><strong>Syntax for creating procedure:</strong></b></h2>
+   <blockquote><p>
+    CREATE [OR REPLACE] PROCEDURE procedure_name<br>
+    [ (parameter [,parameter]) ]<br>
+    IS <br>
+   [declaration_section] <br>
+   BEGIN <br>
+   executable_section <br>
+   [EXCEPTION exception_section] <br>
+   END [procedure_name]; <br>
+</p></blockquote>
+ 
+<h2><b><strong>Syntax for drop procedure:</strong></b></h2>
+<blockquote><p>
+    
+    DROP PROCEDURE procedure_name;
+</p></blockquote>
+<div>
+   <img src="/plSQL/procedures/packages.png" alt="" >
+</div>
+
+</body>
+</html>

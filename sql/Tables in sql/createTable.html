@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL CREATE TABLE</h1>
+    <hr>
+     <p>In the SQL database for creating a table, we use a command called <span>CREATE TABLE.</span></p>
+    <h2><b><strong>SQL CREATE TABLE Statement</strong></b></h2>
+     <p>A <span>Table</span> is a combination of rows and columns. For creating a table we have to define the structure of a table by adding names to columns and providing data type and size of data to be stored in columns.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p><span>CREATE TABLE</span> table_name( <br>
+column1 datatype(size),<br>
+        column2 datatype(size),<br>
+        column3 datatype(size),<br>
+        . <br>
+        . <br>
+        columnN datatype(size));
+    </p></blockquote>
+    <h3><b><strong>SQL CREATE TABLE example</strong></b></h3>
+    <pre style="height: max-content;"><p><span>CREATE TABLE</span> student( <br>
+rollNo INT PRIMARY KEY, <br>
+studName VARCHAR(20),<br>
+lastName VARCHAR(20),<br>
+age INT CHECK(age >= 0 AND age &lt;= 20),<br>
+phNum INT <br>
+);
+    </p></pre>
+    <h3><b><strong>Output:-</strong></b></h3>
+    <!-- output of Create database -->
+    <div class="output">
+        <!-- <h1>--!!image!!--</h1> -->
+        <img src="/sql/Tables in sql/createTable.png" alt="">
+    </div>
+
+
+    <h2><b><strong>Create Table Using Another Table</strong></b></h2>
+     <p>To create a copy of an existing table we use can also  use<span> CREATE TABLE</span>command.In the new table, it gets the exact column definition all columns or specific columns can be selected.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p><span>CREATE TABLE</span> table_name AS <br>
+        SELECT column1, column2,..columnN <br>
+        FROM existing_table_name <br>
+        WHERE (some_condition);
+    </p></blockquote>
+    <h3><b><strong>SQL Query:-</strong></b></h3>
+    <pre style="height: max-content;"><p><span>CREATE TABLE</span> oddStudent AS <br>
+SELECT * FROM student<br> 
+WHERE rollNO = 1,3;</p></pre>
+    <h3><b><strong>Output:-</strong></b></h3>
+    <!-- output of show database -->
+    <div class="output">
+        <!-- <h1>--!!image!!--</h1> -->
+        <img src="/sql/Tables in sql/createTableUSINGotherTable.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL UNIQUE Constraint</h1>
+    <hr>
+    <p>SQL Constraints Unique constraints in SQL is used to check whether the sub-query has duplicate tuples in its result. It returns a boolean value indicating the presence/absence of duplicate tuples. Unique constraint returns true only if the subquery has no duplicate tuples, else it returns false.</p>
+    <ul>
+    <li>Evaluates to true on an empty subquery.</li>
+    <li>Returns true only if there are unique tuples present as the output of the sub-query (two tuples are unique if the value of any attribute of the two tuples differs).</li>
+    <li>Returns true if the sub-query has two duplicate rows with at least one attribute as NULL.</li>
+</ul>
+<h2><b><strong>CREATE UNIQUE Constraint:-</strong></b></h2>
+  <h3><b><strong>• Using CREATE TABLE statement:-</strong></b></h3>
+
+        <blockquote><p><span>CREATE TABLE</span> tableName(
+            colName1 dataType <span>UNIQUE</span>,
+            colsName2> datatype
+            .... 
+            );
+        </p></blockquote>
+
+ <!-- output of Create database -->
+ <!-- <div class="output"> -->
+    <!-- <h1>--!!image!!--</h1> -->
+    <!-- <img src="" alt=""> -->
+<!-- </div> -->
+
+<h3><b><strong>• Using ALTER TABLE statement:-</strong></b></h3>
+
+        <blockquote><p><span>ALTER TABLE</span> tableName <span>ADD UNIQUE</span>,(colname);</p></blockquote>
+ <!-- output of Create database -->
+ <!-- <div class="output"> -->
+    <!-- <h1>--!!image!!--</h1> -->
+    <!-- <img src="" alt=""> -->
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL WHERE Clause</h1>
+    <hr>
+     <p><span>WHERE</span> keyword is used for fetching filtered data in a result set. It is used to fetch data according to particular criteria. <span>WHERE</span> keyword can also be used to filter data by matching patterns.</p>
+    <h2><b><strong>Syntax:-</strong></b></h2>
+    <blockquote><p><span> SELECT FROM</span> table_name [<br>
+        <span>SET</span> column1 = value1, column2 = value2,…<br>
+        <span>WHERE</span> condition];</p></blockquote>
+        <!-- <h2><b><strong>List of Operators that Can be Used with WHERE Clause</strong></b></h2> -->
+        <!-- <table>
+        <thead>
+        <tr>
+        <th><b><strong>Operator</strong></b></th>
+        <th><b><strong>Description</strong></b></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><span>&gt;</span></td>
+        <td>Greater Than</td>
+        </tr>
+        <tr>
+        <td><span>&gt;=</span></td>
+        <td>Greater than or Equal to</td>
+        </tr>
+        <tr>
+        <td><span>&lt;</span></td>
+        <td>Less Than</td>
+        </tr>
+        <tr>
+        <td><span>&lt;=</span></td>
+        <td>Less than or Equal to</td>
+        </tr>
+        <tr>
+        <td><span>=</span></td>
+        <td>Equal to</td>
+        </tr>
+        <tr>
+        <td><span>&lt;&gt;</span></td>
+        <td>Not Equal to</td>
+        </tr>
+        <tr>
+        <td><span>BETWEEN</span></td>
+        <td>In an inclusive Range</td>
+        </tr>
+        <tr>
+        <td><span>LIKE</span></td>
+        <td>Search for a pattern</td>
+        </tr>
+        <tr>
+        <td><span>IN</span></td>
+        <td>To specify multiple possible values for a column</td>
+        </tr>
+        </tbody>
+        </table> -->
+
+        <h3><b><strong>Where Clause with Logical Operators:-</strong></b></h3>
+        <pre style="width: max-content;"><p><b><strong>SELECT * FROM</strong></b> student<b><strong> WHERE</strong></b> age=20;
+</p></pre> 
+        <!-- output of Create database -->
+        <!-- <div class="output"> -->
+            <!-- <h1>--!!image!!--</h1> -->
+            <!-- <img src="" alt=""> -->
+        <!-- </div> -->
+        <pre style="width: max-content;"><p><b><strong>SELECT * FROM </strong></b>student<b><strong> WHERE</strong></b> age&lt;20;</p>
+        </pre> 
+       <!-- output of Create database -->
+       <!-- <div class="output"> -->
+        <!-- <h1>--!!image!!--</h1> -->
+        <!-- <img src="" alt=""> -->
+    <!-- </div> -->
+        <h3><b><strong>Where Clause with BETWEEN Operator:-</strong></b></h3>
+        <pre style="width: 1000px max-content;"><p><b><strong>SELECT * FROM</strong></b> student<b><strong> WHERE</strong></b> age BETWEEN 18 AND 20;</p>
+        </pre> 
+        <!-- output of Create database -->
+        <!-- <div class="output"> -->
+            <!-- <h1>--!!image!!--</h1> -->
+            <!-- <img src="" alt=""> -->
+        <!-- </div> -->
+
+        <h3><b><strong>Where Clause with IN Operator</strong></b></h3>
+        <pre style="width: max-content;"><p><b><strong>SELECT</strong></b> Name<b><strong> FROM</strong></b> student <b><strong>WHERE</strong></b> rollNo <b><strong>IN</strong></b>(4265,4267);
+        </p>
+        </pre>
+        <!-- output of Create database -->
+        <!-- <div class="output"> -->
+            <!-- <h1>--!!image!!--</h1> -->
+            <!-- <img src="" alt=""> -->
+        <!-- </div> -->
+</body>
+</html>

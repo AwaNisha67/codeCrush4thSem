@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL CREATE TABLE</h1>
+    <hr>
+     <p>The <span>ALTER TABLE</span> statement in SQL is used to add, remove, or modify columns in an existing table. The ALTER TABLE statement is also used to add and remove various constraints on existing tables.</p>
+    <h2><b><strong>ALTER TABLE ADD Column Statement</strong></b></h2>
+     <p>ADD is used to add columns to the existing table.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p><span>ALTER TABLE</span> table_name ADD( <br>
+        column1 datatype(size),<br>
+        column2 datatype(size),<br>
+        column3 datatype(size)<br>
+    );
+    </p></blockquote>
+    <h3><b><strong>SQL ALTER TABLE ADD Column example</strong></b></h3>
+    <pre><p><span>ALTER TABLE</span> student <br><span>ADD</span> email varchar(255);</p></pre>
+    
+
+
+    <h2><b><strong>ALTER TABLE DROP Column Statement</strong></b></h2>
+     <p>DROP COLUMN is used to drop columns in a table. Deleting the unwanted columns from the table.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p> <span>ALTER TABLE</span> table_name
+        <span>DROP COLUMN</span> column_name;
+    </p></blockquote>
+    <h3><b><strong>SQL ALTER TABLE DROP Column example</strong></b></h3>
+    <pre><p><span>ALTER TABLE</span> student<br><span>DROP COLUMN</span> Email;</p></pre>
+    
+    
+
+
+    <h2><b><strong>ALTER TABLE MODIFY Column Statement </strong></b></h2>
+     <p>It is used to modify the existing columns in a table. Multiple columns can also be modified at once.</p>
+    <h2><b><strong>Syntax</strong></b></h2>
+    <blockquote>
+    <p> <span>ALTER TABLE</span> table_name <br>
+        <span>MODIFY COLUMN</span> column_name column_type;
+    </p></blockquote>
+    <h3><b><strong>SQL ALTER TABLE MODIFY Column example:-</strong></b></h3>
+    <pre><p><span>ALTER TABLE</span> student <br><span>MODIFY COLUMN</span> lastName VARCHAR(5);</p></pre>
+</body>
+</html>

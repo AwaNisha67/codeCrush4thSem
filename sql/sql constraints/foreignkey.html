@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL FOREIGN KEY constraint</h1>
+    <hr>
+    <p>Foreign Key is a column/field that refers to the primary key/unique key of another table. So it demonstrates the relationship between tables and acts as a cross reference among them.</p>
+    <ul>
+    <li>A Foreign Key Constraint establishes a link between the data in two tables.</li>
+    <li>It consists of a column or combination of columns in one table that holds values corresponding to the primary key values in another table.</li>
+    <li>This linkage creates a relationship between the two tables often referred to as a parent-child relationship.</li>
+    <li>The table with the primary key is termed the Parent Table. The table with the foreign key is termed the Child Table.</li>
+    <li>This relationship is crucial for maintaining Referential Integrity in the database.</li>
+</ul>
+<h2><b><strong>CREATE FOREIGN KEY:-</strong></b></h2>
+  <h3><b><strong>• Using CREATE TABLE statement:-</strong></b></h3>
+
+        <blockquote><p><span>CREATE TABLE</span> tableName(
+            colName1 dataType,
+            colsName2> datatype
+            .... 
+            <span>FOREIGN KEY</span>(colname)<span>REFERENCES</span>otherTableName(colName));
+        </p></blockquote>
+</pre>
+ <!-- output of Create database -->
+ <!-- <div class="output"> -->
+    <!-- <h1>--!!image!!--</h1> -->
+    <!-- <img src="" alt=""> -->
+</div>
+
+<h3><b><strong>• Using ALTER TABLE statement:-</strong></b></h3>
+
+        <blockquote><p><span>ALTER TABLE</span> tableName <br>
+        <span>ADD FOREIGN KEY</span>,(colname)<span>REFERENCES</span> otherTableName(colName);</p></blockquote>
+ <!-- output of Create database -->
+ <!-- <div class="output"> -->
+    <!-- <h1>--!!image!!--</h1> -->
+    <!-- <img src="" alt=""> -->
+</div>
+<h2><b><strong>DROPING A FOREIGN KEY:-</strong></b></h2>  
+<p>If you want to delete the foreign key from the column of the table, then you have to use the following ALTER syntax in SQL:</p>
+<h3><b><strong>Syntax:-</strong></b></h3>
+<blockquote><p><span>ALTER TABLE</span> tableName <br>
+    <span>DROP FOREIGN KEY </span>constraint_name;</p></blockquote>
+<!-- output of Create database -->
+<!-- <div class="output"> -->
+    <!-- <h1>--!!image!!--</h1> -->
+    <!-- <img src="" alt=""> -->
+</div>
+</body>
+</html>

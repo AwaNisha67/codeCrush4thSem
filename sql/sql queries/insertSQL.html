@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SQL INSERT INTO Statement</h1>
+    <hr>
+     <p>The INSERT INTO statement of SQL is used to insert a new row/record in a table. There are two ways of using the SQL INSERT INTO statement for inserting rows.</p>
+    <h2><b><strong>Syntax:-</strong></b></h2>
+    <blockquote><p><span>INSERT INTO</span> table_name <span>VALUES</span> (value1, value2, value3);<br></p></blockquote>
+    <p>If we want to insert values in the specified columns then we use the following query:</p>
+    <blockquote><p><span>INSERT INTO</span>table_name (column1, column2, column3)<span>VALUES</span> (value1, value2, value3);<br></p></blockquote>
+
+    <h3><b><strong>SQL INSERT INTO Statement example:-</strong></b></h3>
+    <p>Creating table name student from which we will select the rows.</p>
+    <pre><p><span>CREATE TABLE</span> student(rollNo INT PRIMARY KEY, 
+studName VARCHAR(20),lastName VARCHAR(20), 
+age INT CHECK(age >= 0 AND age &lt;= 20));</p>
+    </pre>
+    
+    <p>Inserting some Values in the above created table:-</p>
+    <pre><p><span>INSERT INTO</span> student 
+        (4265,"irfaan","khan",20),
+        (4266,"adhiraj","kanwar",19),
+        (4267,"awanisha","pal",19)</p>
+    </pre>
+    
+</body>
+</html>

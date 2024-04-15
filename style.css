@@ -1,0 +1,197 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}	
+html{
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+header{
+	background-color: #FFA500;
+	/* background-image: url('/wave.jpg'); */
+	height: 90vh;
+    max-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+nav{
+	z-index: 1;
+    top: 10px;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	position: sticky;
+	border-radius: 10px;
+
+}
+ul {
+	list-style-type: none;
+	float: right;
+    margin: 20px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 20px;
+	color: black;
+	border: 1px solid transparent;
+	border-radius: 20px;
+}
+ul li a:hover{
+	transition: 0.3s ease;
+	color: orangered;
+}
+.logo img{
+	
+	float: left;
+	border-radius: 20px;
+	padding: 10px;
+	width: 15%;
+	height: 20%;
+}
+.logo img:hover{
+	cursor: pointer;
+    transition: 0.3s ;
+	box-shadow: 5px 5px 5px orangered;
+}
+/*mid section*/
+.bg{
+  
+  position: absolute;
+  width: 100%;
+  /* height:;   */
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
+
+}
+.bg .image img{
+	height:50px auto;
+    /* margin-right: -20px; */
+	position: absolute;
+	top: 10px;
+    right: 16px;
+	width:100px auto;
+
+}
+
+.home{
+	/* margin-top: 60px; */
+	/* margin-left: 40px; */
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    /* justify-content: left; */
+	/* align-items: ; */
+	/* border: 1px solid; */
+}
+.home h1{
+	color: white ;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: left;
+	margin-block: 55px;
+	position: relative;
+	display: block;
+	/* padding: 50px; */
+    max-width: 56.249em;
+    /* inline-size: 500px; */
+    overflow-wrap: break-word;
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+	
+}
+
+.home h4{
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: large;
+    margin-left: 10px;
+    text-align: left;
+}
+.home button{
+    margin-left: 10px;
+    color: black;
+	border: none;
+	outline: none;
+	font-size: 17px;
+	margin-top: 20px;
+	padding: 8px 15px;
+	background: white;
+	border-radius: 5px;
+	display: inline-grid;
+	width: max-content;
+}
+.home button a{
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+.home button:hover{
+	background-color: orangered;
+	cursor: pointer;
+    transition: 0.989s;
+	 letter-spacing: 1px;
+     transform: scale(1.0);
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+/*Exercise.html*/
+.yellow-bg{
+    margin: 15px;
+    height: 320px;
+    margin-top: 35px;
+    background-color: rgb(251,226,12);
+    border-radius: 20px;
+}
+.yellow-bg h1{
+    text-align: center;
+    float: center;
+    font-size: 40px;
+}
+#Sir-Question-section  {
+    display: block;
+}
+#Questionss{
+    align-items: center;
+  
+}
+#Questionss a{
+ 
+    color: black;
+    text-decoration: none;
+font-size: 1.4em;
+margin-right: 25px;
+}
+#Questionss a:hover{
+    font-size:1.5em ;
+    color: #FFA500;
+}
+
+
+
+
+
+main{
+    background-color:rgb(245,245,244);
+}
+.box{
+   float: left;
+}
+iframe{
+    height: 500px;
+    /* width: 575px; */
+}
+.iframe-left{
+   width: 300px;
+}
+.iframe-right{
+	max-width: 1000px;
+    width: 870px;
+}
+

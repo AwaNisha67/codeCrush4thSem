@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Honk&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Sono:wght@800&display=swap');
+        .home{
+            margin-top: 40px;
+            position: relative;
+        }
+        .home h1{
+
+            margin-bottom: 0px; 
+            font-family: "Honk", system-ui;
+            font-optical-sizing: auto;
+            font-size: 200px;
+            font-weight: 800;
+            font-style: normal;
+            font-variation-settings:"MORF" 15,"SHLN" 50;
+        }
+        .paragraph{
+            /* margin-left: 90px; */
+            font-family: "Fredoka", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+            font-size: large;
+            width: 85%;
+        }
+      </style>
+    <title>E-learning</title>
+</head>
+<body>
+        <header id="maincontent" style="background: radial-gradient(circle, rgb(245 180 105) 0%, rgb(102 38 29) 100%);">
+            <nav>
+            <div class="main">
+                <div class="logo">
+                    <img src="/codecrush-logo.png">
+                </div>
+                <div class="items">
+                    <ul>
+                    <li class="active"><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">E-learning</a></li>
+                    <li><a href="/index.html">Exercises</a></li>
+                    <li><a href="codeEditor.html" target="_blank" >Code-Editor</a></li>
+              
+                    </ul>
+                </div>
+            </div>
+            </nav>
+
+            <div class="bg">
+                
+            <div class="home"  style="display: flex; justify-content: center;align-items: center;text-align: center;">
+                <h1>SQL</h1>
+            <button><a href="#main2">Start Learning</a></button>
+        </div>
+        </div>
+        </header>
+        <div class="main" style="display: flex;">
+            <div class="sidebar">
+                <a href="#main" class="topic">SQL Basics<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#main" class="subtopic" data-src="sql\Basics in Sql\introToSQL.html">What is SQL?</a>
+                    <a href="#main" class="subtopic" data-src="sql\Basics in Sql\dataTypeInSQL.html">SQL Data Types</a>
+                    <a href="#main" class="subtopic" data-src="sql\Basics in Sql\typOfCmnd.html">SQL commands</a>
+                </div>
+                <a id="main2" href="#main" class="topic">DataBase in SQL<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#main" class="subtopic" data-src="sql\DataBase in sql\createDB.html">Create Database</a>
+                    <a href="#main" class="subtopic" data-src="sql\DataBase in sql\dropDB.html">Drop Database</a>
+                    <a href="#main" class="subtopic" data-src="sql\DataBase in sql\useDB.html">USE Database</a>
+                </div>
+                <a href="#main" class="topic">Tables in SQL<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    
+                    <a href="#main" class="subtopic" data-src="sql\Tables in sql\createTable.html">CREATE Table</a>
+                    <a href="#main" class="subtopic" data-src="sql\Tables in sql\dropTable.html">DROP Table Statement</a>
+                    <a href="#main" class="subtopic" data-src="sql\Tables in sql\deleteState.html">DELETE Statement</a>
+                    <a href="#main" class="subtopic" data-src="sql\Tables in sql\alterTable.html">SQL ALTER TABLE Statement</a>
+                    <a href="#main" class="subtopic" data-src="sql\Tables in sql\truncate.html">TRUNCATE in SQL</a>
+                </div>
+                <a href="#main" class="topic">SQL Queries<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#topic" class="subtopic" data-src="sql\sql queries\select.html">SELECT Query</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql queries\insertSQL.html">INSERT INTO statement</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql queries\updateSQL.html">UPDATE statement</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql queries\deleteSQL.html">DELETE statement</a>
+                </div>
+                <a href="#main" class="topic">SQL Clauses<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#topic" class="subtopic" data-src="sql\sql clauses\whereCl.html">WHERE Clause</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql clauses\havingCl.html">HAVING Clause</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql clauses\grpByCl.html">GROUP BY Clause</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql clauses\orderByCl.html">ORDER BY Clause</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql clauses\limitCl.html">LIMIT Clause</a>
+                </div>
+                <a href="#main" class="topic">SQL Aggregate functions<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#topic" class="subtopic" data-src="sql\sql aggregate functiom\count.html">COUNT(),AVG() and SUM()</a>
+                    <!-- <a href="#" class="subtopic" data-src="sql\sql aggregate functiom\avg&sum.html">AVG() and SUM()</a> -->
+                    <a href="#topic" class="subtopic" data-src="sql\sql aggregate functiom\max&min.html">MIN() and MAX()</a>
+                </div>
+                <a href="#main" class="topic">SQL Constraints<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#topic" class="subtopic" data-src="sql\sql constraints\primaryKey.html">Primary Key Constraint</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql constraints\foreignkey.html">Foreign Key Constraint</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql constraints\unique.html">UNIQUE Constraint</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql constraints\default.html">DEFAULT Constraint</a>
+                    <a href="#topic" class="subtopic" data-src="sql\sql constraints\notNull.html">NOT NULL Constraint</a>
+                </div>
+                <a href="#main" class="topic">SQL Views<span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#topic" class="subtopic" data-src="sql\views in SQL\viewsInSql.html">Views</a>
+                    
+                </div>
+                <!-- Add more topics and subtopics here -->
+            </div>
+            
+            <div class="content" id="result">
+                <!-- Content will be loaded here -->
+            </div>
+            </div>
+            <script>
+                // Function to handle click on subtopics
+                function handleSubtopicClick(event) {
+                    event.preventDefault();
+                    let subtopicSrc = event.target.dataset.src;
+                    fetch(subtopicSrc)
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('result').innerHTML = html;
+                        })
+                        .catch(error => console.error('Error fetching subtopic:', error));
+                }
+            
+                // Add click event listeners to all subtopics
+                document.querySelectorAll('.subtopic').forEach(subtopic => {
+                    subtopic.addEventListener('click', handleSubtopicClick);
+                });
+            
+                // Function to toggle dropdown content visibility
+                document.querySelectorAll('.topic').forEach(item => {
+                    item.addEventListener('click', event => {
+                        let dropdownContent = item.nextElementSibling;
+                        if (dropdownContent.style.display === 'block') {
+                            dropdownContent.style.display = 'none';
+                        } else {
+                            dropdownContent.style.display = 'block';
+                        }
+                    });
+                });
+            </script>
+        
+</body>
+</html>

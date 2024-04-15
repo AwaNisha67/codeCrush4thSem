@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in PL/SQL:-</h1>
+    <hr>
+     <p>Function can be used as a part of SQL expression i.e. we can use them with select/update/merge commands. One most important characteristic of a function is that, unlike procedures, it must return a value.</p>
+     <h3><b><strong>Advantages:</strong></b></h3>
+     <ul>
+     <li>We can make a single call to the database to run a block of statements thus it improves the performance against running SQL multiple times. This will reduce the number of calls between the database and the application</li>
+<li>We can divide the overall work into small modules which becomes quite manageable also enhancing the readability of the code.</li>
+<li>It promotes reusability.</li>
+    </ul>
+   <h2><b><strong>Syntax for creating functions:</strong></b></h2>
+   <blockquote><p>
+    CREATE [OR REPLACE] FUNCTION function_name <br> 
+    [(parameter_name  type [, ...])] <br>
+   RETURN return_datatype  <br>
+   {IS | AS} <br>
+   [declaration_section] <br>
+   BEGIN <br>
+   executable_section <br>
+   [EXCEPTION exception_section] <br>
+   END [procedure_name]; <br>
+</p></blockquote>
+ 
+<div>
+   <img src="/plSQL/functions/oracle-function-compile.png" alt="" >
+</div>
+
+</body>
+</html>

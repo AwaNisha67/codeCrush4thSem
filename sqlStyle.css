@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.sidebar {
+    height: max-content;
+    width: 315px;
+    background-color: rgb(21, 20, 19);
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    font-size: large;
+    padding: 20px 15px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: lightgrey;
+    color: black;
+    font-weight: 500;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.dropdown-icon {
+    float: right;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*Sql file Content*/
+h1{
+    font-family: "Chivo Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2{
+    font-family: "Space Mono", monospace;
+}
+h3{
+    font-family: "Space Mono", monospace;
+}
+h4{
+    font-family: "Space Mono", monospace;
+}
+p{
+    margin: 17px;
+    font-size: medium;
+    font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+}
+ul{
+    margin: 10px;
+}
+ul>li{
+    margin-block: 10px;
+}
+blockquote{
+    margin-left: 40px;
+    width: 500px;
+    border: 1px solid;
+    text-align: center;
+    max-height: max-content;
+    min-height: 100px;
+    background-color: burlywood;
+    border-radius: 15px;
+}
+pre{
+    width: 500px;
+    border: 1px solid;
+    height: 100px;
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.output img{
+    margin: 20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PL/SQL Cursor</h1>
+    <hr>
+     <p>When an SQL statement is processed, Oracle creates a memory area known as context area. A cursor is a pointer to this context area. It contains all information needed for processing the statement. In PL/SQL, the context area is controlled by Cursor. A cursor contains information on a select statement and the rows of data accessed by it.</p><br>
+     <p>Cursors let you name a work area and access its stored information.</p><br>
+     <p>Cursorscan hold more than one row but process only one row at a time.</p>
+     <br>
+     <p>A cursor is used to referred to a program to fetch and process the rows returned by the SQL statement, one at a time. There are two types of cursors:</p>
+     <ul>
+        <li>Implicit Cursors</li>
+        <li>Explicit Cursors</li>
+     </ul>
+    <h2><b><strong>PL/SQL Implicit Cursors</strong></b></h2>
+     <p> Implicit Cursors are also known as Default Cursors of SQL SERVER. These Cursors are allocated by SQL SERVER when the user performs DML operations.</p>
+     
+     <div>
+         <img src="/plSQL/cursors/cursor.jpg" alt="" style="height: 300px;">
+     </div>
+     <h3><b><strong>Cursor Actions:-</strong></b></h3>
+<ul>
+    <li>Declare Cursor: A cursor is declared by defining the SQL statement that returns a result set.</li>
+    <li>Open: A Cursor is opened and populated by executing the SQL statement defined by the cursor.</li>
+    <li>Fetch: When the cursor is opened, rows can be fetched from the cursor one by one or in a block to perform data manipulation.</li>
+    <li>Close: After data manipulation, close the cursor explicitly.</li>
+    <li>Deallocate: Finally, delete the cursor definition and release all the system resources associated with the cursor.</li>
+</ul>
+<h2><b><strong>PL/SQL Explicit Cursors</strong></b></h2>
+     <p> An explicit cursor is defined in the declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one row. A suitable name for the cursor.</p>
+
+     <h3><b><strong>How to use Explicit Cursor?</strong></b></h3>
+
+     <p>There are four steps in using an Explicit Cursor.</p>
+     <ul style="list-style-type: decimal;"> 
+     <li>DECLARE the cursor in the Declaration section.</li>
+     <li>OPEN the cursor in the Execution Section.</li>
+     <li>FETCH the data from the cursor into PL/SQL variables or records in the Execution Section.</li>
+     <li>CLOSE the cursor in the Execution Section before you end the PL/SQL Block.</li>
+    </ul>
+    <h2><b><strong>Syntax:-</strong></b></h2>
+    <blockquote><p>
+    DECLARE variables;<br>
+    records;<br>
+    create a cursor;<br>
+    BEGIN <br>
+    OPEN cursor; <br>
+    FETCH cursor;<br>
+    process the records;<br>
+    CLOSE cursor; <br>
+    END;<br>
+</p></blockquote>
+    
+<div><img src="/plSQL/cursors/explicitT.gif" alt=""></div>
+    
+</body>
+</html>

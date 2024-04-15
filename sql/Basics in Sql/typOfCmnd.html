@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sqlStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,800;1,800&family=Jersey+15&family=Peralta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Types of commands in SQL:-</h1>
+    <hr>
+    <p style="text-align: justify">SQL commands are like instructions to a table. It is used to interact with the database with some operations. It is also used to perform specific tasks, functions, and queries of data. SQL can perform various tasks like creating a table, adding data to tables, dropping the table, modifying the table, set permission for users.</p>
+    <p>These SQL commands are mainly categorized into five categories:&nbsp;</p>
+    <ol>
+    <li value="1">DDL &#8211; Data Definition Language</li>
+    <li value="2">DQL &#8211; Data Query Language</li>
+    <li value="3">DML &#8211; Data Manipulation Language</li>
+    <li value="4">DCL &#8211; Data Control Language</li>
+    <li value="5">TCL &#8211; Transaction Control Language</li>
+    </ol>
+
+    <h2><b><strong>DDL (Data Definition Language)</strong></b></h2>
+    <p style="text-align: justify">DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application.</p>
+    <p style="text-align: justify">List of DDL commands:&nbsp;</p>
+    <ul>
+    <li value="1"><b>><strong>CREATE</strong></b>: This command is used to create the database or its objects (like table, index, function, views, store procedure, and triggers).</li>
+    <li value="2"><b><strong>DROP</strong></b>: This command is used to delete objects from the database.</li>
+    <li value="3"><b><strong>ALTER</strong></b><b><strong>: </strong></b>This is used to alter the structure of the database.</li>
+    <li value="4"><b><strong>TRUNCATE</strong></b><b><strong>: </strong></b>This is used to remove all records from a table, including all spaces allocated for the records are removed.</li>
+    <li value="5"><b><strong>COMMENT</strong></b>: This is used to add comments to the data dictionary.</li>
+    <li value="6"><b><strong>RENAME</strong></b><b><strong>: </strong></b>This is used to rename an object existing in the database.</li>
+    </ul>
+    <h2><b><strong>DQL (Data Query Language)</strong></b></h2>
+    <p  style="text-align: justify"><b><strong>DQL </strong></b>statements are used for performing queries on the data within schema objects. The purpose of the DQL Command is to get some schema relation based on the query passed to it.&nbsp;We can define DQL as follows it is a component of SQL statement that allows getting data from the database and imposing order upon it. It includes the SELECT statement. This command allows getting the data out of the database to perform operations with it. When a SELECT is fired against a table or tables the result is compiled into a further temporary table, which is displayed or perhaps received by the program i.e. a front-end.</p>
+    <p>List of DQL:&nbsp;</p>
+    <ul>
+    <li value="1"><b><strong>SELECT</strong></b><b><strong>: </strong></b>It is used to retrieve data from the database.</li>
+    </ul>
+    <h2 ><b><strong>DML(Data Manipulation Language)</strong></b></h2>
+    <p style="text-align: justify">The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements.&nbsp;It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.</p>
+    <p>List of DML commands:&nbsp;</p>
+    <ul>
+    <li value="1"><b><strong>INSERT</strong></b>: It is used to insert data into a table.</li>
+    <li value="2"><b><strong>UPDATE</strong></b><b><strong>:</strong></b> It is used to update existing data within a table.</li>
+    <li value="3"><b><strong>DELETE</strong></b>: It is used to delete records from a database table.</li>
+    <li value="4"><b><strong>LOCK:</strong></b> Table control concurrency.</li>
+    <li value="5"><b><strong>CALL: </strong></b>Call a PL/SQL or JAVA subprogram.</li>
+    <li value="6"><b><strong>EXPLAIN PLAN:</strong></b> It describes the access path to data.</li>
+    </ul>
+    <h2 ><b><strong>DCL (Data Control Language)</strong></b></h2>
+    <p style="text-align: justify">DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system.&nbsp;</p>
+    <p>List of &nbsp;DCL commands:&nbsp;</p>
+    <p  style="text-align: justify"><b><strong>GRANT: </strong></b>This command<b><strong> </strong></b>gives users access privileges to the database.</p>
+    <p style="text-align: justify"><b><strong>Syntax:</strong></b></p>
+    <blockquote>
+    <p  style="text-align: justify">GRANT&nbsp;SELECT,&nbsp;UPDATE&nbsp;ON&nbsp;MY_TABLE&nbsp;TO&nbsp;SOME_USER,&nbsp;ANOTHER_USER;&nbsp;&nbsp;</p>
+    </blockquote>
+    <p  style="text-align: justify"><b><strong>REVOKE:</strong></b><b><strong> </strong></b>This command withdraws the user&#8217;s access privileges given by using the GRANT command.</p>
+    <p style="text-align: justify"><b><strong>Syntax:</strong></b></p>
+    <blockquote>
+    <p  style="text-align: justify">REVOKE&nbsp;SELECT,&nbsp;UPDATE&nbsp;ON&nbsp;MY_TABLE&nbsp;FROM&nbsp;USER1,&nbsp;USER2;&nbsp;&nbsp;</p>
+    </blockquote>
+    <h2><b><strong>TCL (Transaction Control Language)</strong></b></h2>
+    <p style="text-align: justify">Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task and ends when all the tasks in the group are successfully completed. If any of the tasks fail, the transaction fails. Therefore, a transaction has only two results: success or failure. Hence, the following TCL commands are used to control the execution of a transaction:&nbsp;</p>
+    <p style="text-align: justify"><b><strong>BEGIN:</strong></b> Opens a Transaction.</p>
+    <p dir="ltr" style="text-align: justify"><b><strong>COMMIT</strong></b><b><strong>: </strong></b>Commits a Transaction.</p>
+    <p style="text-align: justify"><b><strong>Syntax:</strong></b></p>
+    <blockquote>
+    <p style="text-align: justify">COMMIT;&nbsp;&nbsp;</p>
+    </blockquote>
+    <p style="text-align: justify"><b><strong>ROLLBACK</strong></b><b><strong>: </strong></b>Rollbacks a transaction in case of any error occurs.</p>
+    <p  style="text-align: justify"><b><strong>Syntax:</strong></b></p>
+    <blockquote>
+    <p  style="text-align: justify">ROLLBACK;&nbsp;&nbsp;</p>
+    </blockquote>
+    <p style="text-align: justify"><b><strong>SAVEPOINT</strong></b><b><strong>: </strong></b>Sets a save point within a transaction.</p>
+    <p  style="text-align: justify"><b><strong>Syntax:</strong></b></p>
+    <blockquote>
+    <p  style="text-align: justify">SAVEPOINT&nbsp;SAVEPOINT_NAME;&nbsp;&nbsp;</p>
+    </blockquote>
+
+</body>
+</html>
